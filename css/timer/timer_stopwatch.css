@@ -1,0 +1,160 @@
+/* Buttons in the field */
+.fieldButtons{
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    margin: 1em;
+}
+
+.bodyStopwatch{
+    width:23em;
+    height:23em;
+    background-color:#fec400;
+    border-radius: 50%;
+    position:relative;
+}
+
+.displayStopwatch{
+    width: 22em;
+    height: 14em;
+    background-color: #18181a;
+    position:absolute;
+    top:.5em;
+    left:.5em;
+    border-radius:180px 180px 0 0;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
+    box-shadow: 0 -1px 10px 6px white;
+}
+
+.backStopwatch{
+    width:27em;
+    height:27em;
+    background-color:#ffd600;
+    border-radius: 50%;
+    position:relative;
+    z-index:-1;
+    right:2em;
+    bottom:2em;
+
+}
+
+/* where the numbers go */
+.placeholderStopwatch{
+    width:16em;
+    height:8em;
+    background-color:#97afad;
+    position:relative;
+    top: 2.5em;
+    left:3em;
+    border-radius:10px;
+    box-shadow: 0 0 10px .5em #464948;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* letters above placeholder */
+.textStopwatch{
+    position:relative;
+    z-index:2;
+    display:flex;
+    width: 10em;
+    height:2em;
+    justify-content: center;
+    align-items: center;
+    left:6em;
+    top:2em;
+}
+
+.letters{
+    color: #d0dbde;
+    font-family: 'Segoe UI', Times, serif;
+    font-size: larger;
+    text-decoration: underline;
+
+}
+
+
+.blackLetters{
+    color:#151e23;
+    border-radius: 50%;
+    box-shadow:0 0 10px .1em #d0dbde;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#textCircle{
+    width: 2.1em;
+    height: 2.1em;
+    background-color: #d0dbde;
+    position:absolute;
+    z-index: -1;
+    border-radius: 50%;
+    left: 3.3em;
+}
+
+h3{
+    color: #924240;
+    position: relative;
+    left:8.5em;
+    top:2.2em;
+    font-weight: bolder;
+}
+
+h3::before{
+    content: "";
+    width: .5em;
+    height: .5em;
+    color: #924240;
+    background-color: #924240;
+    display: block;
+    border-radius: 50%;
+    position:relative;
+    left: -1em;
+    top: .8em;
+}
+
+.placeholderStopwatch * {
+    font-size: 4em;
+
+}
+
+/*---------------------------------------start, stop and restart */
+
+/* for start and restart */
+.startRestart{
+    width:6em;
+    height:6em;
+    background-color:#ffb300;
+    position:relative;
+    z-index: -2;
+    top:-28em;
+    transform: rotate(-40deg);
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 10px;
+}
+
+.startRestart span{
+    margin: .5em;
+    font-weight: bolder;
+    color: #a83836;
+}
+
+.buttonStartRestart{
+    background-color:#a83836;
+    border:none;
+    width:5em;
+    height:2em;
+    position:absolute;
+    top:-2em;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px;
+    
+}

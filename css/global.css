@@ -1,0 +1,64 @@
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+#gadgets{
+    width: 20em;
+    height: 10%;
+    border:1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.field{
+    width:20em;
+    height: 89%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#demonstration{
+    border: 1px solid black;
+    width: 30em;
+    height: 30em;
+    position: relative;
+    top: 20%;
+}
+
+/* the section for demonstration */
+#demonstration{
+    width:70em;
+    height:35em;
+    border:1px solid black;
+    position:absolute;
+    left:23em;
+    top:5em;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+/* Icons */
+
+/* all form Timer icon */
+.icons{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.icons span{
+    visibility:hidden;
+    -webkit-transition: all 500ms ease;
+    opacity: 0;
+}
+
+.icons:hover span{
+    visibility:visible;
+    opacity: 1;
+}
