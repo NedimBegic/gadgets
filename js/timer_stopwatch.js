@@ -31,7 +31,7 @@ function start(){
     buttonStop.style.height = "2em";
     buttonStop.style.top = "-2em";
     // count miliseconds
-    setInterval(count,10);
+    counting = setInterval(count,10);
 
     function count() {
         // miliseconds
@@ -54,7 +54,16 @@ function start(){
 };
 
 function stop() {
+    // change size of STOP button
     buttonChange(buttonStop);
+
+    // return the defoult size of START button
+    buttonStart.style.height = "2em";
+    buttonStart.style.top = "-2em";
+
+    // stop the counting of the time
+    clearInterval(counting)
+
 };
 
 function restart() {
@@ -62,13 +71,24 @@ function restart() {
     buttonRestart.style.height = "1em";
     buttonRestart.style.top = "-13em";
     
-
     // return the size of RESTART button
     setTimeout(returnHeight,300);
     function returnHeight() {
         buttonRestart.style.height = "3em";
         buttonRestart.style.top = "-14em";
     };
+
+    // restart the time to 00
+    clearInterval(counting);
+    miliseconds.textContent = "00";
+    seconds.textContent = "00";
+    minutes.textContent = "00";
+
+    // set the default site of START and STOP buttons
+    buttonStop.style.height = "2em";
+    buttonStop.style.top = "-2em";
+    buttonStart.style.height = "2em";
+    buttonStart.style.top = "-2em"
 };
 
 /* Function when start or stop is pressed */
