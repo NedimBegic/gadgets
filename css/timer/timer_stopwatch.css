@@ -124,15 +124,15 @@ h3::before{
 
 }
 
+
 /*---------------------------------------start, stop and restart */
 
 /* for start and restart */
 .startRestart{
     width:6em;
     height:6em;
-    background-color:#ffb300;
+    background-image: linear-gradient(#ffb200 60%, #ffd600 40%);
     position:relative;
-    z-index: -2;
     top:-28em;
     transform: rotate(-40deg);
     display:flex;
@@ -157,4 +157,30 @@ h3::before{
     border-top-left-radius: 5px;
     border-top-right-radius:5px;
     
+}
+
+/* stop button */
+
+.Restart{
+    top:-34em;
+    left:17em;
+    transform: rotate(45deg);
+}
+
+/* restart button */
+
+#restartButton{
+    height: 3em;
+    width: 5em;
+    border-top-left-radius: 20px;
+    border-top-right-radius:20px;
+    position: relative;
+    background-color: #18181a;
+    top:-14em;
+    left:13.8em;
+    color: #a83836;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 3px 3px white;
 }

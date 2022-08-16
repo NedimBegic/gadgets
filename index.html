@@ -27,11 +27,16 @@
         <button class="fieldButtons">Stopwatch</button>
     </article>
     <section id="demonstration">
+        <div id="restartButton">Restart</div>
         <div class="bodyStopwatch">
             <div class="backStopwatch"></div>
             <div class="startRestart">
                 <span>Start</span>
-                <button id="onlyStart" class="buttonStartRestart">start</button>
+                <button id="onlyStart" class="buttonStartRestart"></button>
+            </div>
+            <div class="startRestart Restart">
+                <span>Stop</span>
+                <button id="onlyStop" class="buttonStartRestart"></button>
             </div>
             <div class="displayStopwatch">
                 <div class="textStopwatch">
@@ -40,7 +45,11 @@
                     <div class="letters blackLetters">AST</div>
                     <div class="letters">IME</div>
                 </div>
-                <div class="placeholderStopwatch"><h1>11.11.11</h1></div>
+                <div class="placeholderStopwatch">
+                    <h1 id="minutes"></h1>:
+                    <h1 id="second"></h1>:
+                    <h1 id="miliseconds"></h1>
+                </div>
                 <h3>Stopwatch</h3>
             </div>
         </div>
