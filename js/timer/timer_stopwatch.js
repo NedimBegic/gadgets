@@ -80,6 +80,10 @@ function restart() {
 
     // restart the time to 00
     clearInterval(counting);
+    // restart variables
+    ms = 0;
+    s = 0;
+    m = 0;
     miliseconds.textContent = "00";
     seconds.textContent = "00";
     minutes.textContent = "00";

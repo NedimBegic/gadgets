@@ -22,16 +22,10 @@ body{
     align-items: center;
 }
 
-#demonstration{
-    border: 1px solid black;
-    width: 30em;
-    height: 30em;
-    position: relative;
-    top: 20%;
-}
+
 
 /* the section for demonstration */
-#demonstration{
+.demonstration{
     width:70em;
     height:35em;
     border:1px solid black;
