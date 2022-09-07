@@ -191,3 +191,8 @@ h3::before{
     align-items: center;
     box-shadow: 0 0 3px 3px white;
 }
+
+/* set stopwatch to display:none */
+.stopwatch{
+    display:none;
+}

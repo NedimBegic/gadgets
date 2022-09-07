@@ -1,6 +1,7 @@
 body{
     width: 100vw;
     height: 100vh;
+    overflow:inherit;
 }
 
 #gadgets{
@@ -55,4 +56,9 @@ body{
 .icons:hover span{
     visibility:visible;
     opacity: 1;
+}
+
+/* for all hidden things */
+.hidden {
+    display:none;
 }
