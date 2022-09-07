@@ -1,7 +1,7 @@
 body{
     width: 100vw;
     height: 100vh;
-    overflow:inherit;
+    background-image: linear-gradient(#D3CCE3, #E9E4F0);
 }
 
 #gadgets{
@@ -16,7 +16,6 @@ body{
 .field{
     width:20em;
     height: 89%;
-    border: 1px solid black;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -29,7 +28,6 @@ body{
 .demonstration{
     width:70em;
     height:35em;
-    border:1px solid black;
     position:absolute;
     left:23em;
     top:5em;
@@ -56,6 +54,7 @@ body{
 .icons:hover span{
     visibility:visible;
     opacity: 1;
+    color:blue;
 }
 
 /* for all hidden things */

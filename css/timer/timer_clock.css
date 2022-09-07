@@ -2,7 +2,9 @@
     width:30em;
     height:30em;
     border-radius: 50%;
-    background-color: rgb(255 255 255 .8);
+    background-image: radial-gradient(#dfc3b8 5% ,#603d26 8% ,#b5958a 10%, #603d26 13% ,#cab3ac 15% ,#603d26 18%, #af8f82 20%, #603d26 18%, #c9a390 25%, #603d26 23%, #d3b49f 30%, #603d26 33%, #e7c8bf 35%, #603d26 38%,
+    #b17c6a 40%, #603d26 43%, #daab97 45%, #603d26 48%, #c5936e 50%, #603d26 53%, #835642 55%, #603d26 58%,
+    #c47b54 60%, #603d26 63%, #884633 65%, #603d26 68%) ;
     border: 5px solid black;
     position:relative;
 
@@ -29,7 +31,9 @@
     width: 100%;
     height: 100%;
     font-size: 2.5rem;
+    font-weight: bolder;
     transform:rotate(var(--rotation));
+    color: #D3CCE3;
 }
 
 /* position of the numbers */
