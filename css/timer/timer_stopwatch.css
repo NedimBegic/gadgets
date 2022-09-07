@@ -196,3 +196,13 @@ h3::before{
 .stopwatch{
     display:none;
 }
+
+.logo{
+    width: 4em;
+    height: 4em;
+    position:absolute;
+    left:50%;
+    top:70%;
+    transform: translateX(-50%);
+
+}
