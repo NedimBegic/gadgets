@@ -45,6 +45,7 @@
 .number10 {--rotation: 300deg;}
 .number11 {--rotation: 330deg;}
 
+/*  pointers on the clock for hours, minutes and seconds */
 .pointer{
     --rotation:0;
     position:absolute;
