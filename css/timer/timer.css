@@ -1,0 +1,18 @@
+/* -------------Buttons in timer */
+.fieldButtons {
+    background-image: linear-gradient(to left, gold, goldenrod);
+    border: 2px solid goldenrod;
+    color: #7a624b;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: all 1s ease-out;
+
+}
+
+.fieldButtons:hover {
+    background-image: linear-gradient(to right, gold, goldenrod);
+    font-weight: bolder;
+    font-size: 1.6rem;
+    color:#332316
+
+}

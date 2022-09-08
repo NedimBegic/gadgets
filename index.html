@@ -8,27 +8,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/timer/timer.css">
+    <link rel="stylesheet" href="css/changer/changer.css">
     <link rel="stylesheet" href="css/timer/timer_stopwatch.css">
     <link rel="stylesheet" href="css/timer/timer_clock.css">
     <title>Gadgets</title>
 </head>
 
 <body>
+    <!-- ----------------------------------Logo image------------------- -->
     <img src="BuBaLogo.png" id="logo" alt="">
+
+    <!-- -----------------The icons to choose the fileds of gadgets------------ -->
     <article id="gadgets">
+        <!-- Timer -->
         <div class="timer icons">
             <i class="fa fa-clock-o fa-3x"></i>
             <span>Timer</span>
         </div>
+        <!-- Changer -->
         <div class="changer icons">
             <i class="fa fa-exchange fa-3x "></i>
             <span>Changer</span>
         </div>
     </article>
-    <article class="field timerField">
+
+    <!-- ------------------------The fileds with buttons for the gadgets ---------------------->
+    <!-- Timer field -->
+    <article class="field timerField hidden">
         <button class="fieldButtons stopwathcButton">Stopwatch</button>
         <button class="fieldButtons clockButton">Clock</button>
     </article>
+    <!-- Changer field -->
+    <article class="field changerField">
+        <!-- Color changer -->
+        <div class="fieldDiv colorDiv">
+             <input class="colorInput" type="text" placeholder="      Choose a color">
+             <button class="changerButton">Change color</button>
+        </div>
+        <!-- Theme chenger -->
+        <div class="fieldDiv themeButton">
+
+        </div>
+
+    </article>
+    
+    <!-- -----------------------The demonstrations of the choosen gadgets-------------- -->
+    <!-- Stopwatch demonstration -->
     <section class="demonstration stopwatch hidden">
         <div id="restartButton">Restart</div>
         <div class="bodyStopwatch">
@@ -58,6 +84,7 @@
             </div>
         </div>
     </section>
+    <!-- Clock demonstration -->
     <section class="demonstration clock hidden">
         <div id="clock">
             <div class="pointer hour" data-hour-pointer></div>
@@ -76,11 +103,13 @@
             <div class="numbers number11">11</div>
             <div class="numbers number12">12</div> 
         </div>
-
     </section>
+
+    <!-- Javascript -->
     <script src="js/main.js"></script>
     <script src="js/timer/timer_clock.js"></script>
     <script src="js/timer/timer_stopwatch.js"></script>
+    <script src="js/changer/colorChange.js"></script>
 </body>
 
 </html>

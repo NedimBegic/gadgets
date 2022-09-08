@@ -28,11 +28,13 @@ body {
     border-top: none;
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
+    gap: 1em;
+
 }
 
 
 
-/* the section for demonstration */
+/* ----------the section for demonstration */
 .demonstration {
     width: 70em;
     height: 35em;
@@ -44,7 +46,7 @@ body {
     align-items: center;
 }
 
-/* Icons */
+/*----------------- Icons */
 
 /* all form Timer icon */
 .icons {
@@ -76,29 +78,13 @@ body {
     color: gold
 }
 
-/* Buttons in changer */
-.fieldButtons {
-    background-image: linear-gradient(to left, #4b607a, #6b89ae);
-    border: 2px solid goldenrod;
-    color: goldenrod;
-    font-weight: bolder;
-    font-size: 1.5rem;
-    transition: all 1s ease-out;
 
-}
-
-.fieldButtons:hover {
-    background-image: linear-gradient(to right, #4b607a, #6b89ae);
-    background: #4b607a;
-    color: gold;
-
-}
-
-/* for all hidden things */
+/* -----------for all hidden things */
 .hidden {
     display: none;
 }
 
+/* ------------For the my Logo */
 #logo {
     width: 4em;
     height: 4em;

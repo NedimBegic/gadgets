@@ -1,0 +1,57 @@
+
+/* -------------Divs for changer */
+.fieldDiv{
+    width: 10em;
+    height: 10em;
+    background-color: gold;
+    background-image: linear-gradient(gold,goldenrod);
+    border: 2px solid goldenrod;
+    color: goldenrod;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+    margin: 1em;
+    border-radius: 20px;
+
+}
+
+/* input in color changer */
+input{
+    width: 10em;
+    background-color:#7a624b;
+    border: none;
+    border-radius: 10px;
+    color: goldenrod;
+    height: 1.5em;
+}
+
+::placeholder {
+    color:goldenrod;
+    opacity: 1; 
+  }
+
+  /* Button in colorDiv */
+  .changerButton{
+    height: 3em;
+    width: 8em;
+    border-radius: 10px;
+    background-image: linear-gradient(to left, #554435, #7a624b);
+    transition:1s;
+    opacity: .9;
+    border: 2px dashed white;
+    font-size: 1em;
+    color: gold;
+    
+  }
+
+  .changerButton:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to right, #554435, #7a624b);
+    border: 2px dotted white;
+    font-weight: bolder;
+    opacity: 1;
+    color: goldenrod;
+
+  }
