@@ -55,3 +55,10 @@ input{
     color: goldenrod;
 
   }
+
+  .noColor{
+    font-size:5em;
+    font-weight: bolder;
+    color: white;
+
+  }

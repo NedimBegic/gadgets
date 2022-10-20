@@ -1,0 +1,98 @@
+
+.screenPictures{
+    z-index: 2;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/images/nature1.jpg') ;
+    animation-name: nature;
+    animation-duration: 50s;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;    ; 
+    top:-.9em;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes nature {
+    10% {background-image: url('/images/nature2.jpg') ;}
+    20% {background-image: url('/images/nature3.jpg') ;}
+    30% {background-image: url('/images/nature3.jpg') ;}
+    40% {background-image: url('/images/nature4.jpg') ;}
+    50% {background-image: url('/images/nature5.jpg') ;}
+    60% {background-image: url('/images/nature6.jpg') ;}
+    70% {background-image: url('/images/nature7.jpg') ;}
+    80% {background-image: url('/images/nature8.webp') ;}
+    90% {background-image: url('/images/nature9.jpeg') ;}
+    100% {background-image: url('/images/nature10.jpeg') ;}
+
+
+}
+
+.hidden{
+    display: none;
+
+}
+
+#stopImages {
+    width: 5em;
+    height: 5em;
+    background: rgba(147, 143, 143, 0.5);
+    opacity: 0.8;
+    margin: 1em;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    -webkit-transition: all 1s ease;
+  }
+  
+  .lines {
+    width: 0.4em;
+    height: 4em;
+    background-color: orange;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-transition: all 500ms ease;
+  }
+  
+  .circles {
+    width: .3em;
+    height: .3em;
+    border-radius: 50%;
+    margin: 0.1em;
+    background-color: aqua;
+    border: none;
+    -webkit-transition: all 1s ease;
+  }
+  
+  /* move on lines and circles on hover */
+  #stopImages:hover .lines {
+    position: absolute;
+    transform: rotate(45deg);
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+  }
+  
+  #stopImages:hover .right {
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+  
+  #stopImages:hover .circles {
+    display: flex;
+    justify-content: space-between;
+    background-color: orange;
+  }
+  
+  #stopImages:hover {
+    opacity: 1;
+    background-color: aqua;
+  }
+  

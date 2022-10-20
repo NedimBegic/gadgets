@@ -12,13 +12,29 @@
     <link rel="stylesheet" href="css/changer/changer.css">
     <link rel="stylesheet" href="css/timer/timer_stopwatch.css">
     <link rel="stylesheet" href="css/timer/timer_clock.css">
+    <link rel="stylesheet" href="css/changer/changer.theme.css">
+    <link rel="stylesheet" href="css/changer/changer.screen.css">
     <title>Gadgets</title>
 </head>
 
 <body>
+    
     <!-- ----------------------------------Logo image------------------- -->
     <img src="BuBaLogo.png" id="logo" alt="">
 
+    <!-- -----------------------Screen saver div------------------------------ -->
+    <div class="screenPictures hidden">
+        <button id="stopImages">
+            <div class="lines">
+              <div class="circles"></div>
+              <div class="circles"></div>
+            </div>
+            <div class="lines right">
+              <div class="circles"></div>
+              <div class="circles"></div>
+            </div>
+          </button>
+    </div>
     <!-- -----------------The icons to choose the fileds of gadgets------------ -->
     <article id="gadgets">
         <!-- Timer -->
@@ -43,16 +59,35 @@
     <article class="field changerField">
         <!-- Color changer -->
         <div class="fieldDiv colorDiv">
-             <input class="colorInput" type="text" placeholder="      Choose a color">
-             <button class="changerButton">Change color</button>
+            <input class="colorInput" type="text" placeholder="      Choose a color">
+            <button class="changerButton">Change color</button>
         </div>
         <!-- Theme chenger -->
         <div class="fieldDiv themeButton">
-
+            <h1>Themes</h1>
+            <div class="defaultTheme">
+                 <h2>Nature</h2>
+                 <label class="switch">
+                    <input type="checkbox" id="defaultCheckbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="defaultTheme dark">
+                <h2>Dark</h2>
+                <label class="switch">
+                   <input type="checkbox" id="darkCheckbox">
+                   <span class="slider"></span>
+               </label>
+            </div>  
+        </div>
+        <!-- Screen saver -->
+        <div class="fieldDiv">
+            <h2>Screen saver</h2>
+            <button id="buttonScreen">Click Me</button>
         </div>
 
     </article>
-    
+
     <!-- -----------------------The demonstrations of the choosen gadgets-------------- -->
     <!-- Stopwatch demonstration -->
     <section class="demonstration stopwatch hidden">
@@ -101,15 +136,21 @@
             <div class="numbers number9">9</div>
             <div class="numbers number10">10</div>
             <div class="numbers number11">11</div>
-            <div class="numbers number12">12</div> 
+            <div class="numbers number12">12</div>
         </div>
     </section>
+    <!-- When there is no color -->
+    <div class="demonstration">
+        <p class="noColor"></p>
 
+    </div>
     <!-- Javascript -->
     <script src="js/main.js"></script>
     <script src="js/timer/timer_clock.js"></script>
     <script src="js/timer/timer_stopwatch.js"></script>
     <script src="js/changer/colorChange.js"></script>
+    <script src="js/changer/themeChange.js"></script>
+    <script src="js/changer/screenChange.js"></script>
 </body>
 
 </html>
