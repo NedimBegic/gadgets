@@ -96,3 +96,26 @@
     background-color: aqua;
   }
   
+
+  /* Screen saver div */
+  .fieldDiv h2 {
+    font-weight: bolder;
+    color: #554435;
+    font-size: larger;
+  }
+
+  #buttonScreen {
+    width:7em;
+    height: 3em;
+    border-radius: 20px;
+    border: none;
+    background-color: #3cdfff;
+    color: white;
+    -webkit-transition: all 1s ease;
+
+  }
+
+  #buttonScreen:hover{
+    cursor: pointer;
+    background-color: #3eaec5;
+  }

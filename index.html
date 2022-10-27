@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/timer/timer_clock.css">
     <link rel="stylesheet" href="css/changer/changer.theme.css">
     <link rel="stylesheet" href="css/changer/changer.screen.css">
+    <link rel="stylesheet" href="css/counter/wordCounter.css">
     <title>Gadgets</title>
 </head>
 
@@ -37,26 +38,32 @@
     </div>
     <!-- -----------------The icons to choose the fileds of gadgets------------ -->
     <article id="gadgets">
-        <!-- Timer -->
-        <div class="timer icons">
+        <!-- Changer -->
+        <div class="changer icons">
+            <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+            <span>Changer</span>
+        </div>
+         <!-- Timer -->
+         <div class="timer icons">
             <i class="fa fa-clock-o fa-3x"></i>
             <span>Timer</span>
         </div>
-        <!-- Changer -->
-        <div class="changer icons">
-            <i class="fa fa-exchange fa-3x "></i>
-            <span>Changer</span>
+        <!-- Counter -->
+        <div class="counter icons">
+            <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+            <span>Counter</span>
+
         </div>
     </article>
 
     <!-- ------------------------The fileds with buttons for the gadgets ---------------------->
-    <!-- Timer field -->
+    <!-- ----------------Timer field -->
     <article class="field timerField hidden">
         <button class="fieldButtons stopwathcButton">Stopwatch</button>
         <button class="fieldButtons clockButton">Clock</button>
     </article>
-    <!-- Changer field -->
-    <article class="field changerField">
+    <!-- ----------------Changer field -->
+    <article class="field changerField hidden">
         <!-- Color changer -->
         <div class="fieldDiv colorDiv">
             <input class="colorInput" type="text" placeholder="      Choose a color">
@@ -85,7 +92,10 @@
             <h2>Screen saver</h2>
             <button id="buttonScreen">Click Me</button>
         </div>
-
+    </article>
+    <!-- ---------------Counter field -->
+    <article class="field">
+        <button class="fieldButtons">Word & Letter Counter</button>
     </article>
 
     <!-- -----------------------The demonstrations of the choosen gadgets-------------- -->
@@ -139,6 +149,19 @@
             <div class="numbers number12">12</div>
         </div>
     </section>
+    <!-- Word & Letter Counter -->
+    <section class="demonstration counter">
+        <textarea  class="counterInput" name="" id="" cols="30" rows="10"></textarea>
+        <div class="maxLength">
+            <div>
+                <h2>Number of Words: </h2><p class="wordCount"> 0</p>
+            </div>
+            <div>
+                <h2>Number of letters: </h2><p class="letterCount">0</p>
+            </div>
+        </div>
+        <div class="everyChar"></div>
+    </section>
     <!-- When there is no color -->
     <div class="demonstration">
         <p class="noColor"></p>
@@ -151,6 +174,7 @@
     <script src="js/changer/colorChange.js"></script>
     <script src="js/changer/themeChange.js"></script>
     <script src="js/changer/screenChange.js"></script>
+    <script src="js/counter/wordCounter.js"></script>
 </body>
 
 </html>
