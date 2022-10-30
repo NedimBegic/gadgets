@@ -1,0 +1,98 @@
+
+.calc{
+    background:linear-gradient(black,red) ;
+    border-radius: 20px;
+    width:28em;
+    height:29em;
+    border: none;
+    z-index: 3;
+     
+}
+
+#placeholder{
+    width: 26em;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    
+}
+
+#results{
+    width: 26em;
+    height: 3em;
+    border-radius: 10px;
+    margin-left: 2em;
+    margin-top: 1em;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-weight: bolder ;
+
+}
+#all{
+    display: flex;
+    margin-top: 2em;
+    justify-content: space-evenly;
+
+}
+
+#numbers{
+    width: 15em;
+    height: 15em;
+    display: grid;
+    grid-template-rows: 5em 5em 5em 5em;
+    grid-template-columns: 5em 5em 5em;
+    
+    
+}
+#numbers li{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+    border: 1px solid white;
+    list-style: none;
+    font-size: larger;
+    font-weight:bold;
+    background-color: grey;
+    opacity: .9;
+    
+  
+}
+
+#operations{
+    width: 4em;
+    height: 20em;
+    display: grid;
+    grid-template-columns: 5em;
+    gap: .3em;
+    position: relative;
+    right:1em;
+   
+}
+#operations li{
+    list-style: none;
+    border-radius: 50%;
+    width: 3.5em;
+    border: 1px solid white;
+    padding-inline-start:none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bold;
+    background-color: rgb(155, 151, 151);
+    opacity: .9;
+    transition: width 2s;
+
+}
+
+li:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.clear{
+    font-weight: bolder;
+    color:red;
+}

@@ -15,11 +15,12 @@
     <link rel="stylesheet" href="css/changer/changer.theme.css">
     <link rel="stylesheet" href="css/changer/changer.screen.css">
     <link rel="stylesheet" href="css/counter/wordCounter.css">
+    <link rel="stylesheet" href="css/counter/counter_calculator.css">
     <title>Gadgets</title>
 </head>
 
 <body>
-    
+
     <!-- ----------------------------------Logo image------------------- -->
     <img src="BuBaLogo.png" id="logo" alt="">
 
@@ -27,14 +28,14 @@
     <div class="screenPictures hidden">
         <button id="stopImages">
             <div class="lines">
-              <div class="circles"></div>
-              <div class="circles"></div>
+                <div class="circles"></div>
+                <div class="circles"></div>
             </div>
             <div class="lines right">
-              <div class="circles"></div>
-              <div class="circles"></div>
+                <div class="circles"></div>
+                <div class="circles"></div>
             </div>
-          </button>
+        </button>
     </div>
     <!-- -----------------The icons to choose the fileds of gadgets------------ -->
     <article id="gadgets">
@@ -43,8 +44,8 @@
             <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
             <span>Changer</span>
         </div>
-         <!-- Timer -->
-         <div class="timer icons">
+        <!-- Timer -->
+        <div class="timer icons">
             <i class="fa fa-clock-o fa-3x"></i>
             <span>Timer</span>
         </div>
@@ -73,8 +74,8 @@
         <div class="fieldDiv themeButton">
             <h1>Themes</h1>
             <div class="defaultTheme">
-                 <h2>Nature</h2>
-                 <label class="switch">
+                <h2>Nature</h2>
+                <label class="switch">
                     <input type="checkbox" id="defaultCheckbox">
                     <span class="slider"></span>
                 </label>
@@ -82,10 +83,10 @@
             <div class="defaultTheme dark">
                 <h2>Dark</h2>
                 <label class="switch">
-                   <input type="checkbox" id="darkCheckbox">
-                   <span class="slider"></span>
-               </label>
-            </div>  
+                    <input type="checkbox" id="darkCheckbox">
+                    <span class="slider"></span>
+                </label>
+            </div>
         </div>
         <!-- Screen saver -->
         <div class="fieldDiv">
@@ -95,7 +96,10 @@
     </article>
     <!-- ---------------Counter field -->
     <article class="field">
-        <button class="fieldButtons">Word & Letter Counter</button>
+        <!-- Work and Letter Counter -->
+        <button class="fieldButtons counterButton">Word & Letter Counter</button>
+        <!-- Calculator -->
+        <button class="fieldButtons calculatorButton">Calculator</button>
     </article>
 
     <!-- -----------------------The demonstrations of the choosen gadgets-------------- -->
@@ -150,17 +154,52 @@
         </div>
     </section>
     <!-- Word & Letter Counter -->
-    <section class="demonstration counter">
-        <textarea  class="counterInput" name="" id="" cols="30" rows="10"></textarea>
+    <section class="demonstration counterDemo hidden">
+        <textarea class="counterInput" name="" id="" cols="30" rows="10"></textarea>
         <div class="maxLength">
             <div>
-                <h2>Number of Words: </h2><p class="wordCount"> 0</p>
+                <h2>Number of Words: </h2>
+                <p class="wordCount"> 0</p>
             </div>
             <div>
-                <h2>Number of letters: </h2><p class="letterCount">0</p>
+                <h2>Number of letters: </h2>
+                <p class="letterCount">0</p>
             </div>
         </div>
         <div class="everyChar"></div>
+    </section>
+    <!-- Calculator -->
+    <section class="demonstration calculatorDemo">
+        <main class="calc">
+            <div id="placeholder">
+                <span id="results"></span>
+            </div>
+            <div id="all">
+                <ul id="numbers">
+                    <li class="button">7</li>
+                    <li class="button">8</li>
+                    <li class="button">9</li>
+                    <li class="button">4</li>
+                    <li class="button">5</li>
+                    <li class="button">6</li>
+                    <li class="button">1</li>
+                    <li class="button">2</li>
+                    <li class="button">3</li>
+                    <li class="button">.</li>
+                    <li class="button">0</li>
+                    <li class="button">=</li>
+                </ul>
+                <ul id="operations">
+                    <li class="button clear">C</li>
+                    <li class="button">←</li>
+                    <li class="button">*</li>
+                    <li class="button">/</li>
+                    <li class="button">-</li>
+                    <li class="button">+</li>
+                </ul>
+            </div>
+
+        </main>
     </section>
     <!-- When there is no color -->
     <div class="demonstration">
@@ -175,6 +214,7 @@
     <script src="js/changer/themeChange.js"></script>
     <script src="js/changer/screenChange.js"></script>
     <script src="js/counter/wordCounter.js"></script>
+    <script src="js/counter/counter_calculator.js"></script>
 </body>
 
 </html>

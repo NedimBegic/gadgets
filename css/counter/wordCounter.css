@@ -1,5 +1,5 @@
 
-.counter{
+.counterDemo{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -12,10 +12,6 @@
     margin: 2em;
     margin-bottom: 0em;
 
-}
-
-.demonstration{
-    border: 1px solid black;
 }
 
 .maxLength{
@@ -49,4 +45,8 @@
 
 .chars{
     margin: .4em;
+}
+
+.hidden{
+    display: none;
 }
