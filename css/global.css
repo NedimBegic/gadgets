@@ -81,7 +81,7 @@ body {
 
 /* -----------for all hidden things */
 .hidden {
-    display: none;
+visibility: none;
 }
 
 /* ------------For the my Logo */

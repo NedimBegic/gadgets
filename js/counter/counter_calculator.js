@@ -19,16 +19,20 @@ buttons.map(button => {
                 display.innerText = display.innerText.slice(0, -1);
                 break;
             case "=":
-                display.innerText = eval(display.innerText);
-                break;
-            case "+":
-                if(display.innerText[display.innerText.lnegth-1] == "+") return;
-                console.log(display.innerText[display.innerText.length-1])
-                display.innerText += "+";
+                try{
+                    display.innerText = eval(display.innerText);
+
+                }
+                catch(err){
+                    err = 'Data entry is not valid';
+                    display.innerText = err;
+                }
                 break;
             default:
                 display.innerText += e.target.innerText;
         }
     })
 })
+
+
 

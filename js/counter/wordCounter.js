@@ -35,6 +35,3 @@ inputText.addEventListener('input', function (e) {
 let charObj = {};
 
 
-document.querySelector('.counterButton').addEventListener('click', () => {
-  document.querySelector('.counterDemo').classList.toggle('hidden')
-})

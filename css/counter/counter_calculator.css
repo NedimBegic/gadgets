@@ -2,7 +2,7 @@
 .calc{
     background:linear-gradient(black,red) ;
     border-radius: 20px;
-    width:28em;
+    width:26em;
     height:29em;
     border: none;
     z-index: 3;
@@ -18,8 +18,8 @@
 }
 
 #results{
-    width: 26em;
-    height: 3em;
+    width: 22em;
+    height: 2em;
     border-radius: 10px;
     margin-left: 2em;
     margin-top: 1em;
@@ -48,14 +48,14 @@
 }
 #numbers li{
     display: flex;
-   align-items: center;
-   justify-content: center;
+    align-items: center;
+    justify-content: center;
     border: 1px solid white;
     list-style: none;
     font-size: larger;
     font-weight:bold;
     background-color: grey;
-    opacity: .9;
+    opacity: .8;
     
   
 }
@@ -82,12 +82,12 @@
     font-size: larger;
     font-weight: bold;
     background-color: rgb(155, 151, 151);
-    opacity: .9;
+    opacity: .8;
     transition: width 2s;
 
 }
 
-li:hover{
+ #operations li:hover, #numbers li:hover{
     cursor: pointer;
     opacity: 1;
 }
@@ -95,4 +95,8 @@ li:hover{
 .clear{
     font-weight: bolder;
     color:red;
+}
+
+.backArrow{
+    color: rgb(49, 207, 107);
 }

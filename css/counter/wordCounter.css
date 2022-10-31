@@ -1,10 +1,8 @@
-
-.counterDemo{
+.flexDemo{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    
 }
-
 .counterInput{
     width:84%;
     height:10em;
@@ -48,5 +46,7 @@
 }
 
 .hidden{
-    display: none;
+    visibility: none;
 }
+
+

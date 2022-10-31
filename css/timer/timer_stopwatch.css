@@ -12,6 +12,7 @@
     background-color:#fec400;
     border-radius: 50%;
     position:relative;
+    z-index: 2;
 }
 
 .displayStopwatch{
@@ -190,6 +191,7 @@ h3::before{
     justify-content: center;
     align-items: center;
     box-shadow: 0 0 3px 3px white;
+    z-index: 3;
 }
 
 /* set stopwatch to display:none */
